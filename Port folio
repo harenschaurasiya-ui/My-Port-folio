@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harens | My Portfolio</title>
+<style>
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:#090b20;color:#f5f5ff;font-family:Arial,sans-serif;line-height:1.6}
+@keyframes float{50%{transform:translateY(-12px) rotate(4deg)}}
+@keyframes shine{50%{box-shadow:0 0 35px #58f6ff88}}
+@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+nav{position:sticky;top:0;z-index:5;text-align:center;padding:15px;background:#11152ff5;border-bottom:1px solid #454b76}
+nav b{display:block;font-size:22px;color:#58f6ff}
+nav a{display:inline-block;color:white;text-decoration:none;margin:6px;padding:5px;transition:.3s}
+nav a:hover{color:#58f6ff;transform:translateY(-3px)}
+header{text-align:center;padding:65px 18px;background:radial-gradient(ellipse at top,#29285f,#090b20 75%)}
+.avatar{display:grid;place-items:center;width:125px;height:125px;margin:auto;border-radius:50%;background:linear-gradient(135deg,#58f6ff,#a78bfa,#ff72c6);color:#090b20;font-size:42px;font-weight:bold;animation:float 4s infinite ease-in-out,shine 3s infinite}
+h1{font-size:clamp(32px,7vw,60px);line-height:1.2}
+.gradient{background:linear-gradient(90deg,#58f6ff,#c5aaff,#ff72c6);background-clip:text;-webkit-background-clip:text;color:transparent}
+header p{max-width:650px;margin:18px auto;color:#bdc5e3}
+.btn{display:inline-block;padding:12px 18px;margin:6px;border:0;border-radius:12px;background:#58f6ff;color:#090b20;font-weight:bold;text-decoration:none;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-4px);box-shadow:0 0 22px #58f6ff77}
+.wrap{width:90%;max-width:900px;margin:auto}
+section{padding:35px 0;scroll-margin-top:90px;animation:appear .6s ease}
+.kicker{color:#ffb36b;letter-spacing:2px;font-size:13px}
+h2{font-size:29px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:15px}
+.card{padding:20px;border-radius:18px;background:linear-gradient(145deg,#1b2750,#11152f);border:1px solid #414873;transition:.3s}
+.card:hover{transform:translateY(-5px);border-color:#58f6ff;box-shadow:0 10px 30px #58f6ff19}
+.card h3{color:#58f6ff}
+.icon{font-size:32px}
+details{margin:13px 0;padding:17px;border-radius:16px;background:#151a3b;border:1px solid #414873;transition:.3s}
+details[open]{border-color:#58f6ff;box-shadow:0 0 20px #58f6ff22}
+summary{cursor:pointer;font-weight:bold;color:#58f6ff;font-size:17px}
+details p{color:#c1c9e3}
+label{display:block;margin:13px 0 5px;font-weight:bold;color:#dce4ff}
+input,select,textarea{width:100%;padding:13px;border-radius:11px;border:1px solid #49527c;background:#0b102b;color:white;font:inherit;outline:none;transition:.25s}
+input:focus,select:focus,textarea:focus{border-color:#58f6ff;box-shadow:0 0 15px #58f6ff22}
+textarea{resize:vertical;min-height:130px}
+.formbox{padding:clamp(18px,4vw,32px);background:linear-gradient(145deg,#191f46,#10132d);border:1px solid #54508a;border-radius:22px}
+footer{text-align:center;padding:30px 15px;color:#aab5d6;border-top:1px solid #343b65}
+@media(max-width:500px){nav a{margin:3px;font-size:13px}.hero{padding-top:45px}.formbuttons .btn{width:100%;margin:6px 0}}
+</style>
+</head>
+<body>
+
+<nav>
+<b>HC. PORTFOLIO ✨</b>
+<a href="#about">About</a>
+<a href="#profile">Profile</a>
+<a href="#skills">Skills</a>
+<a href="#feedback">Feedback</a>
+</nav>
+
+<header class="hero">
+<div class="avatar">HC</div>
+<p style="color:#58f6ff;letter-spacing:3px">STUDENT • DREAMER • CREATOR</p>
+<h1>Hello, I'm<br><span class="gradient">Harens Chaurasiya</span></h1>
+<p>Welcome to my digital universe! 🌌 A Class Nine student exploring knowledge, creativity, and technology. Every great journey begins with a dream!</p>
+<a class="btn" href="#about">✨ Explore My World</a>
+<a class="btn" href="#feedback" style="background:#c5aaff">💌 Send Feedback</a>
+</header>
+
+<main class="wrap">
+<section id="about">
+<div class="kicker">01 / INTRODUCTION</div>
+<h2>About <span class="gradient">Me 🌟</span></h2>
+<details>
+<summary>🚀 Discover My Story</summary>
+<p>Hi! I'm Harens Chaurasiya. I enjoy learning new things, exploring technology, and turning creative ideas into reality. I believe mistakes help us learn and grow.</p>
+<p style="color:#ffb36b">My motto: Learn today, create tomorrow, never stop growing!</p>
+</details>
+<details>
+<summary>🎯 My Dreams and Goals</summary>
+<p>I want to gain knowledge, develop digital skills, build exciting projects, and use technology to make a positive difference in the world.</p>
+</details>
+</section>
+
+<section id="profile">
+<div class="kicker">02 / STUDENT DETAILS</div>
+<h2>My Student <span class="gradient">Profile 🎓</span></h2>
+<div class="grid">
+<div class="card"><div class="icon">👨‍🎓</div><h3>Full Name</h3><p>Harens Chaurasiya</p></div>
+<div class="card"><div class="icon">🏫</div><h3>Education</h3><p>Paschimanchal English School</p><p>Class Nine | Roll No. 10</p></div>
+<div class="card"><div class="icon">📍</div><h3>Location</h3><p>Rayapur</p></div>
+<div class="card"><div class="icon">🎂</div><h3>Age</h3><p>14 years</p></div>
+</div>
+</section>
+
+<section id="skills">
+<div class="kicker">03 / MY LEARNING JOURNEY</div>
+<h2>Skills & <span class="gradient">Interests 💻</span></h2>
+<div class="grid">
+<div class="card"><div class="icon">🌐</div><h3>Web Design</h3><p>Exploring HTML, CSS, layouts, and creative website design.</p></div>
+<div class="card"><div class="icon">🧠</div><h3>Learning</h3><p>Practising problem-solving, curiosity, and creative thinking.</p></div>
+<div class="card"><div class="icon">🚀</div><h3>Future Goals</h3><p>Building useful digital projects and developing new skills.</p></div>
+</div>
+</section>
+
+<section id="feedback">
+<div class="kicker">04 / YOUR VOICE MATTERS</div>
+<h2>Message & <span class="gradient">Feedback 💌</span></h2>
+<p style="color:#b6bfdc">Have a suggestion or something nice to say? Share your thoughts below!</p>
+
+<div class="formbox">
+<div style="text-align:center;font-size:42px;animation:float 4s infinite">💌</div>
+<h3 style="text-align:center;color:#58f6ff">Welcome to the Message Portal</h3>
+
+<form action="" method="get">
+<label for="visitor">Your Name</label>
+<input id="visitor" type="text" name="visitor" placeholder="Enter your name..." required>
+
+<label for="type">Message Type</label>
+<select id="type" name="type" required>
+<option value="" disabled selected>Choose a category</option>
+<option value="feedback">💡 Feedback</option>
+<option value="suggestion">🚀 Suggestion</option>
+<option value="question">❓ Question</option>
+<option value="appreciation">💖 Appreciation</option>
+<option value="other">✨ Other</option>
+</select>
+
+<label for="message">Your Message</label>
+<textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+<label for="rating">Rate My Portfolio</label>
+<select id="rating" name="rating" required>
+<option value="" disabled selected>Select a rating</option>
+<option value="5">⭐⭐⭐⭐⭐ Amazing</option>
+<option value="4">⭐⭐⭐⭐ Very good</option>
+<option value="3">⭐⭐⭐ Good</option>
+<option value="2">⭐⭐ Needs improvement</option>
+<option value="1">⭐ Keep improving</option>
+</select>
+
+<div class="formbuttons" style="margin-top:20px">
+<button type="submit" class="btn">🚀 Submit Message</button>
+<button type="reset" class="btn" style="background:#a78bfa">↺ Reset Form</button>
+</div>
+<p style="font-size:12px;color:#aab5d6">Thank you for visiting my portfolio! ✨</p>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<p>Made with 💙, creativity, and a little magic ✨</p>
+<p>© 2026 Harens Chaurasiya | Student Portfolio</p>
+<a class="btn" href="#top">⬆ Back to Top</a>
+<p style="font-size:12px">Privacy tip: Think carefully before publishing your personal details online.</p>
+</footer>
+
+</body>
+</html>
